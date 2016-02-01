@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{15065caf-af44-4069-bb72-808c7d40dcbe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="header">
+      <UniqueIdentifier>{b0235bad-5ee7-4ec7-a881-b5df32c69e24}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="image.hpp">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="object.hpp">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="parser.hpp">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="raytracer.hpp">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="scene.hpp">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="basic.hpp">
+      <Filter>header</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="parser.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="object.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="raytracer.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

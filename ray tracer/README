@@ -1,0 +1,45 @@
+Compiling and Running on *nix
+=============================
+
+The provided Makefile will compile this assignment on a number of Linux/Unix
+base systems. All you need to do is run:
+
+    make
+
+To run the executable:
+
+    ./raytracer
+
+By default, this will render a scene with only a red cube and save the 
+resulting image as output.bmp.
+
+To run the executable and render a different scene, pass it as the first
+argument:
+
+    ./raytracer your_scene_file_path
+
+
+
+File Description (REALLY HELPFUL)
+=================================
+
+The "main.cpp" is the entry of the program, it uses Parser (defined in "parser.hpp" and "parser.cpp")
+to parse the scene file and create a Scene object (defined in "scene.hpp") for the ray tracing step.
+
+Then Raytracer (defined in "raytracer.hpp" and "raytracer.cpp") is used to render the scene. It renders
+the scene on an Image object and output the image as a bmp file (which is supported by "image.hpp").
+
+The scene object may contain several Gemeotric Objects (defined in "object.hpp" and "object.cpp"). The
+basic math toolkit such as Vector, Matrix, Ray, and Intersection are defined in "basic.hpp".
+
+Basically, your job is to write code in "object.cpp" and "raytracer.cpp". You are recommended to have a
+quick look at "basic.hpp", "object.hpp", "raytracer.hpp", and "scene.hpp" to get a good knowledge of the
+C++ classes, which will help with your coding. The rest of the files: "image.hpp", "parser.cpp", and 
+"parser.hpp" are less important than the above.
+
+
+
+Scene Format
+============
+
+See scenes/basic.ray for a self-describing scene file.
